@@ -111,6 +111,9 @@ export function ProfessionalReport() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[300px] font-black text-navy select-none">DISC</div>
           </div>
           <div className="max-w-3xl mx-auto w-full text-center flex-1 flex flex-col justify-center relative z-10">
+            <div className="mb-6">
+              <img src="/bsc-logo-white.png" alt="BSC Indonesia" className="h-10 mx-auto opacity-80" />
+            </div>
             <div className="mb-8">
               <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-navy/5">
                 {(['D', 'I', 'S', 'C'] as DiscDimension[]).map(d => (
