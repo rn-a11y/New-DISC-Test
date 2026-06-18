@@ -10,8 +10,10 @@ export function Cover() {
     <SlideContainer className="flex flex-col relative overflow-hidden">
       <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.02)_1px,transparent_1px)] bg-[length:60px_60px] pointer-events-none" />
       <div className="flex-1 flex flex-col items-center px-6">
-        <div className="h-14 shrink-0" />
-        <div className="h-8" />
+        <div className="h-12 shrink-0 flex items-center">
+          <img src="/bsc-logo-white.png" alt="BSC Indonesia" className="h-8 opacity-60" />
+        </div>
+        <div className="h-6" />
         <div className="w-full max-w-6xl min-w-0 shrink-0 py-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -62,7 +64,8 @@ export function Cover() {
         <div className="w-full max-w-6xl shrink-0">
           <Navigation hidePrev />
         </div>
-        <div className="h-8" />
+        <p className="text-[10px] text-slate-300 mt-2">&copy; 2026 BSC Indonesia. All rights reserved.</p>
+        <div className="h-6" />
       </div>
     </SlideContainer>
   );
