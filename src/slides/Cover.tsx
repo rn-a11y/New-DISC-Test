@@ -9,13 +9,11 @@ export function Cover() {
   return (
     <SlideContainer className="flex flex-col relative overflow-hidden">
       <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.02)_1px,transparent_1px)] bg-[length:60px_60px] pointer-events-none" />
-      <div className="flex-1 flex flex-col items-center px-6 justify-between">
-        <div className="w-full max-w-6xl pt-6">
-          <img src="/bsc-logo-white.png" alt="BSC Indonesia" className="h-10" />
-        </div>
+      <div className="flex-1 flex flex-col items-center px-6 justify-center">
         <div className="w-full max-w-6xl min-w-0 py-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
+              <img src="/bsc-logo-white.png" alt="BSC Indonesia" className="h-10 mb-6" />
               <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-navy/5 text-navy text-xs font-semibold rounded-full mb-6 border border-navy/10">
                 <span className="w-1.5 h-1.5 rounded-full bg-navy" />
                 Talent Assessment Tool
@@ -60,9 +58,9 @@ export function Cover() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-6xl shrink-0">
+        <div className="w-full max-w-lg shrink-0 mt-4">
           <Navigation hidePrev />
-          <p className="text-[11px] text-slate-300 text-center mt-3">&copy; 2026 BSC Indonesia. All rights reserved.</p>
+          <p className="text-[11px] text-slate-300 text-center mt-4">&copy; 2026 BSC Indonesia. All rights reserved.</p>
         </div>
       </div>
     </SlideContainer>
