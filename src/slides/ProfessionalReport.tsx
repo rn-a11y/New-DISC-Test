@@ -137,7 +137,9 @@ export function ProfessionalReport() {
               <p className="text-sm text-slate-400">info@id.bscsolution.com</p>
             </div>
 
-            <div className="mt-10 max-w-xl mx-auto text-left bg-slate-50 rounded-xl p-6 border border-slate-100">
+            <p className="mt-6 text-[11px] text-slate-300 font-medium">&copy; 2026 BSC Indonesia. All rights reserved.</p>
+
+            <div className="mt-8 max-w-xl mx-auto text-left bg-slate-50 rounded-xl p-6 border border-slate-100">
               <p className="text-sm text-slate-600 leading-relaxed">
                 Dear {name},<br /><br />
                 Thank you for completing the DISC test questionnaire. This assessment
