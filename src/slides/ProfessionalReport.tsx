@@ -76,9 +76,7 @@ export function ProfessionalReport() {
   const coaching = getCoachingItems(dom, sec);
 
   const rsMap = new Map(rs.map(r => [r.dimension, r]));
-  const sortedByChange = [...rs].sort((a, b) => b.change - a.change);
-  const pressureStrengths = sortedByChange.filter(r => r.change >= 3);
-  const pressureRisks = sortedByChange.filter(r => r.change <= -3);
+
 
   const handlePrint = () => window.print();
 
@@ -161,7 +159,7 @@ export function ProfessionalReport() {
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start">
               <div className="md:col-span-3 flex justify-center">
-                <DiscCircleChart scores={l3.scores} rawScores={rs} />
+                <DiscCircleChart scores={l3.scores} />
               </div>
               <div className="md:col-span-2 text-left">
                 <ScoreBars line1={l1.scores} line2={l2.scores} line3={l3.scores} />

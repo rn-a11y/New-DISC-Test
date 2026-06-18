@@ -1,4 +1,4 @@
-import type { StandardScore, DiscDimension, RawScore } from '../../data/types';
+import type { StandardScore, DiscDimension } from '../../data/types';
 
 const dimColors: Record<DiscDimension, string> = { D: '#EF4444', I: '#F97316', S: '#22C55E', C: '#3B82F6' };
 const dimNames: Record<DiscDimension, string> = { D: 'Dominance', I: 'Influence', S: 'Steadiness', C: 'Compliance' };
@@ -31,7 +31,7 @@ function gridPath(radius: number): string {
 
 const gridRadii = [35, 70, 105, OUTER_R];
 
-export function DiscCircleChart({ scores, rawScores }: { scores: StandardScore[]; rawScores: RawScore[] }) {
+export function DiscCircleChart({ scores }: { scores: StandardScore[] }) {
   const legendY = SIZE + 28;
 
   return (
@@ -77,7 +77,6 @@ export function DiscCircleChart({ scores, rawScores }: { scores: StandardScore[]
         const v = ss?.value ?? 0;
         const r = scoreToRadius(v);
         const p = polar(angles[d], r);
-        const isHigh = r > OUTER_R * 0.6;
         return (
           <g key={`dot-${d}`}>
             <circle cx={p.x} cy={p.y} r={10} fill={dimColors[d]} fillOpacity={0.15} stroke="none" />
